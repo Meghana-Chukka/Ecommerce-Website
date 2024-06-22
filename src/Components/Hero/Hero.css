@@ -1,0 +1,71 @@
+.hero{
+
+    height: 100vh; /*This makes the .hero element cover the entire height of the browser window regardless of its content.*/
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%); 
+    /* 180: direction, here it is top to bottom
+      #fde1ff: color at the top
+      #e1ffea22:  Ending color with 22% transparency, where e1ffea is RGB nd 22 is hte alpha value
+      The gradient transition starts with the first color (#fde1ff) at the top of the .hero element and smoothly transitions to the second color (#e1ffea22) as you move 60% down the height of the element.*/
+   display: flex;
+}
+
+.hero-left{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero-left h2{ 
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600px;
+}
+
+.hero-left p{
+
+    color: #171717;
+    font-size: 58px;
+    font-weight: 700;
+
+}
+
+.hero-hand-icon{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img{
+    width: 85px;
+    
+} 
+
+.hero-latest-btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hero-right{
+
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

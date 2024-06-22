@@ -1,0 +1,62 @@
+1. npx create-react-app . : command is used to create a new React application in the current directory using the Create React App (CRA) tool. 
+                            npx allows you to run executable packages without needing to install them globally on your system.
+//creates all folders and sub folders of a basic react app
+
+2. npm install react-router-dom: react-router-dom is a library used for handling routing in React applications. It enables navigation among different components, changing the browser URL, and keeping the UI in sync with the URL.
+                                 npm fetches the react-router-dom package from the npm registry.
+                                 The package, along with its dependencies, is installed into the node_modules directory in your project.
+                                 The package.json file is updated to include react-router-dom as a dependency, and an entry is added to package-lock.json to lock the version of the installed package.            
+
+3. npm start : to run the application at http://localhost:3000
+
+4. remove the unecessary builtin code like in src/App.js, rename the title in index.html in public folder
+
+5. create components, pages and context folders in src folder
+   components folder for react components 
+   context folder for context api's: The Context API is a feature of React, a JavaScript library for building user interfaces. It provides a way to pass data through the component tree without having to pass props down manually at every level.
+   pages folder for creating e-commerce  pages
+
+6. to convert a normal jsx file(react file) to react component use rafce shortcut in vscode..it gives a basix structure of a react component with import,export and function statements.
+
+7. when u create a react component  also create css to that component and import that css into the react component.(eg: import './navbar.css')
+
+8.mount the created components into app.js file and simultaneously add the import statements of that component.
+
+9.in assests folder...all_product.js: defines an array of product objects and exports it as the default export from the module. Each product object contains information about a specific product, such as its ID, name, category, image, new price, and old price. 
+The code defines an array named all_product. Each element in the array is an object representing a product.
+At the end, exports the all_product array as the default export from the module. This means that when another file imports from this module, it will receive the all_product array by default.
+
+10. universal font used is : poppins font
+
+11. Pages:
+    1.shop: home page
+    2.shop category: contains men women and kids pages
+    3.product: contains our products
+    4.cart page
+    5.loginsignup page
+
+12. Routing: Routing in a web application refers to the process of determining what content to display to the user based on the URL they navigate to. Routing allows different components to be displayed without requiring a full page reload.
+
+13. hero componet is used to dispay the starting element in the website
+    items component to display the items
+    popular component is used to display the popular products
+    offers component is  used to display the offer banner
+    newcollections component is used to display new collections products
+    newsletter component 
+
+    All these components are mounted in shop page as they are to be displayed on home page.
+
+14. WHY CONTEXT API: 
+   1. "I used the Context API to avoid prop drilling. Prop drilling occurs when you have to pass props through multiple levels of the component tree to reach deeply nested components. In this project, all_product data needs to be accessed by various components, some of which are deeply nested. Using Context API allows me to provide this data at a high level and make it available wherever it's needed without passing it through multiple layers of props."
+   2. Improve Code Maintainability
+
+15. Y NOT RESTFUL API FOR THIS PROJECT:
+
+  Using a RESTful API is generally more beneficial when you need to manage dynamic data that frequently changes or needs to be fetched from a server. In our case, the data is relatively stable and can be easily managed within the application using the Context API."
+  Project Scope and Simplicity:
+  "For the scope of this project, using a RESTful API would have added unnecessary complexity. The primary requirement was to share product data across various components within a single-page application. The Context API provides a straightforward solution for this need without the overhead of setting up and maintaining a RESTful service."
+
+16. Y REACT:
+   1.Popularity and Industry Demand: "React is one of the most popular JavaScript libraries for building user interfaces. Learning React opens up many career opportunities."
+   2. Component-Based Architecture
+   3. Uses virtual dom
